@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    .bg-1 {
+      background-image: url('img/bggr1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .bg-1 {
+        background-color: #ff3cac;
+        background-image: linear-gradient(225deg,
+            #ff3cac 0%,
+            #784ba0 50%,
+            #2b86c5 100%);
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    .form-1 {
+      background: rgba(230, 230, 230, 0.2)
+    }
+
+
+    .mid-2 {
+      background-image: url('img/bg4.jpg');
+      background-size: cover;
+
+    }
+
+    .frame-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%;
+      /* 16:9 Aspect Ratio */
+    }
+
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .bgblur {
+      background: rgba(0, 0, 102, 0.3)
+    }
+
+    .footer {
+      background-image: url('img/bg6.png');
+      background-size: cover;
+
+    }
+  </style>
+
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <div class="row bg-light p-1">
+      <div class="col-6 col-md-3 text-center my-auto">
+        <img src="img/logo.png" class="img-thumbnail" alt="Logo" />
+      </div>
+      <div class="col-6 col-md-6 text-center my-auto p-1 p-md-0 fw-bold fs-6">
+        <div class="d-inline-block me-md-5">
+          <i class="far fa-envelope"></i>
+          email@domain.co.in
+        </div>
+        <div class="d-inline-block ms-md-5">
+          <i class="fas fa-mobile-alt"></i>
+          +91 1234056789
+        </div>
+      </div>
+      <div class="col-12 col-md-3 text-center my-auto">
+        <button type="button" class="btn btn-primary my-2 my-md-1">
+          <i class="fas fa-comments"></i>
+          Request 30 Days CMR Free Trial
+        </button>
+      </div>
+    </div>
+
+    <!-- Mid-1 -->
+    <div class="row bg-1">
+      <div class="col-12 col-md-7 py-2">
+        <p class="display-5 text-warning text-center text-md-start mx-md-5">
+          <b>5 Reason</b>
+          why every business is adopting
+          <b>video conferencing solution</b>
+        </p>
+        <ul class="w-100 w-md-75 px-0 px-md-5 me-md-5">
+          <li class="text-white">
+            <i class="fas fa-check"></i>
+            &nbsp; &nbsp;
+            <b class="text-warning">81% Prefer</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam
+            dolorem porro laboriosam itaque, temporibus excepturi dicta
+            numquam nulla commodi recusandae unde a possimus labore illo vero
+            nihil esse quibusdam?
+          </li>
+          <li class="text-white">
+            <i class="fas fa-check"></i>
+            &nbsp; &nbsp;
+            <b class="text-warning">81% Prefer</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam
+            dolorem porro laboriosam itaque, temporibus excepturi dicta
+            numquam nulla commodi recusandae unde a possimus labore illo vero
+            nihil esse quibusdam?
+          </li>
+          <li class="text-white">
+            <i class="fas fa-check"></i>
+            &nbsp; &nbsp;
+            <b class="text-warning">81% Prefer</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam
+            dolorem porro laboriosam itaque, temporibus excepturi dicta
+            numquam nulla commodi recusandae unde a possimus labore illo vero
+            nihil esse quibusdam?
+          </li>
+          <li class="text-white">
+            <i class="fas fa-check"></i>
+            &nbsp; &nbsp;
+            <b class="text-warning">81% Prefer</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam
+            dolorem porro laboriosam itaque, temporibus excepturi dicta
+            numquam nulla commodi recusandae unde a possimus labore illo vero
+            nihil esse quibusdam?
+          </li>
+          <li class="text-white">
+            <i class="fas fa-check"></i>
+            &nbsp; &nbsp;
+            <b class="text-warning">81% Prefer</b>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam
+            dolorem porro laboriosam itaque, temporibus excepturi dicta
+            numquam nulla commodi recusandae unde a possimus labore illo vero
+            nihil esse quibusdam?
+          </li>
+        </ul>
+        <div class="p-2 h4 w-100 text-center bg-arrow">
+          <span class="border border-3 p-2 text-white text-center d-inline-block mx-auto">
+            Limited time offer upto 75% off <i class="fas fa-chevron-circle-down d-block d-md-none"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 text-center py-2">
+        <div class="container p-3 p-lg-5 rounded form-1">
+          <div class="row justify-content-center py-2 text-white h5">
+            <div class="col-11">
+              Request 30 Days CMR Trial And Learn About Our Offers From Clsco Collaboration Expert
+            </div>
+          </div>
+          <form class="needs-validation border border-3 border-white rounded w-100 mx-auto" novalidate>
+            <div class="row justify-content-center mb-1 mt-5">
+              <div class="col-10">
+                <!-- <label for="companyname" class="form-label">Company Name</label> -->
+                <input type="text" class="form-control" id="companyname" placeholder="Company Name" required />
+                <div class="valid-feedback text-dark fw-bold">Looks good!</div>
+                <div class="invalid-feedback text-dark fw-bold">Please choose a Company Name!</div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center my-2">
+              <div class="col-10">
+                <!-- <label for="name" class="form-label">Name</label> -->
+                <input type="text" class="form-control" id="name" placeholder="Name" required />
+                <div class="valid-feedback text-dark fw-bold">Looks good!</div>
+                <div class="invalid-feedback text-dark fw-bold">Please Enter Your Name!</div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center my-2">
+              <div class="col-10">
+                <!-- <label for="email" class="form-label">Email</label> -->
+                <input type="email" class="form-control" id="email" placeholder="Email" required />
+                <div class="valid-feedback text-dark fw-bold">Looks good!</div>
+                <div class="invalid-feedback text-dark fw-bold">Please Enter Your Email!</div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center my-2">
+              <div class="col-10">
+                <!-- <label for="phoneno" class="form-label">Phone No</label> -->
+                <input type="number" class="form-control" id="phoneno" placeholder="Phone Number" required />
+                <div class="valid-feedback text-dark fw-bold">Looks good!</div>
+                <div class="invalid-feedback text-dark fw-bold">Please Enter Your Phone Number!</div>
+              </div>
+            </div>
+
+
+
+            <div class="row justify-content-center my-4">
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                  Book A Free Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="row justify-content-center text-white h5 mb-5">
+              <p>For More Enquiry</p>
+              <p>Call On : +91 1234506789</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- customers -->
+  <div class="container my-3">
+    <div class="row justify-content-between">
+      <div class="col-6 lh-1">
+        <p class="fs-1">Some of <b>our customers</b></p>
+        <p>We have 241+ satisfied customers. Some of the latest collaboration customers are :</p>
+      </div>
+      <div class="col-6 text-end">
+        <button type="button" class="btn btn-dark">
+          <i class="fas fa-envelope text-warning"></i>
+          Offline - Leave a message
+        </button>
+      </div>
+    </div>
+    <div class="row justify-content-center py-2">
+      <div class="col-3 text-center my-auto">
+        <img src="img/cust1.png" class="img-thumbnail border border-0" alt="cust1">
+      </div>
+      <div class="col-3 text-center my-auto">
+        <img src="img/cust2.png" class="img-thumbnail border border-0" alt="cust2">
+      </div>
+      <div class="col-3 text-center my-auto">
+        <img src="img/cust3.png" class="img-thumbnail border border-0" alt="cust3">
+      </div>
+      <div class="col-3 text-center my-auto">
+        <img src="img/cust4.png" class="img-thumbnail border border-0" alt="cust4">
+      </div>
+    </div>
+  </div>
+
+  <!-- video -->
+  <div class="container-fluid mid-2">
+    <div class="row mx-md-4 py-4">
+      <div class="col-12 col-md-6 fw-bold fs-4 mt-3">
+        <p class="fs-2 text-light">Video</p>
+        <div class="frame-container">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Rasx9TXSgAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 fw-bold fs-4 ps-md-5 pt-2 mt-3 bgblur round">
+        <p class="display-6 fw-bold text-warning" style="font-family: 'Acme', sans-serif;">Advantages of Using Cisco Conferrencing Solution</p>
+        <ul class="w-100 w-md-75 px-0 px-md-5 me-md-5 fs-6 lh-lg">
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+          <li class="text-light">
+            <i class="fas fa-arrow-right text-warning"></i>
+            &nbsp; &nbsp;
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mid-3 -->
+
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-12 fs-2">
+        Limited time <b>offer</b>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+
+        <div class="card border border-0 text-center mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <div class="card-title text-center bg-primary text-white lh-1 p-2 m-0 border">
+              <p class="fs-3">Upto 75%</p>
+              OFF
+            </div>
+            <div class="card-text p-3 border m-0">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+            <div class="text-center border p-2">
+              <a href="#" class="btn btn-primary">Get it now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+
+        <div class="card border border-0 text-center mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <div class="card-title text-center bg-primary text-white lh-1 p-2 m-0 border">
+              <p class="fs-3">Upto 75%</p>
+              OFF
+            </div>
+            <div class="card-text p-3 border m-0">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+            <div class="text-center border p-2">
+              <a href="#" class="btn btn-primary">Get it now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <div class="container-fluid footer text-white">
+    <div class="row py-4">
+      <div class="col-12 text-center">
+        <p class="h3">Change the way you meet for the better</p>
+        <p>Get scalabel web and video conferrencing, when and how you need it</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        <button type="button" class="btn btn-info">Click Here</button>
+      </div>
+    </div>
+    <div class="row bg-dark py-3 fs-6">
+      <div class="col-12 col-md-4 text-center">
+        <i class="fas fa-globe"></i> www.mydomain.co.in
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <i class="fas fa-envelope"></i> email.domain.com
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <i class="fas fa-mobile"></i> +91 1234560789
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+
+</html>
